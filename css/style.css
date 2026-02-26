@@ -783,6 +783,22 @@ strong {
   border-radius: var(--radius);
 }
 
+.project-video-shorts {
+  padding-bottom: 0;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  max-height: 480px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.project-video-shorts iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .project-link-video {
   color: #ff4444;
   border-color: rgba(255, 68, 68, 0.3);
