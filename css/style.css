@@ -515,6 +515,12 @@ strong {
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
+.project-badge-private {
+  background: rgba(161, 161, 170, 0.12);
+  color: var(--text-muted);
+  border: 1px solid rgba(161, 161, 170, 0.25);
+}
+
 .project-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -661,6 +667,18 @@ strong {
   color: var(--accent-green);
   border-color: var(--accent-green);
   background: rgba(16, 185, 129, 0.05);
+}
+
+.project-link-private {
+  color: var(--text-muted);
+  border-color: rgba(161, 161, 170, 0.2);
+  cursor: default;
+}
+
+.project-link-private:hover {
+  color: var(--text-muted);
+  border-color: rgba(161, 161, 170, 0.3);
+  background: transparent;
 }
 
 /* Code Window (Visual) */

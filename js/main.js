@@ -7,8 +7,8 @@
 
   // --- Typing Animation ---
   const roles = [
-    'AI Infrastructure Engineer',
     'Full-Stack Developer',
+    'Chatbot Service Developer',
     'Robotics Software Engineer',
     'Open-Source Contributor',
   ];
@@ -133,7 +133,6 @@
   // --- GitHub API: Fetch Live Star Counts ---
   var GITHUB_USERNAME = 'dbwls99706';
   var REPOS_TO_TRACK = [
-    'deadends.dev',
     'OpenSource-contribution-card',
     'Velog_Backup',
     'yolov8_on_raspberrypi4',

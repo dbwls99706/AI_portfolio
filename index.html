@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YuJin Hong — Software Engineer Portfolio</title>
-  <meta name="description" content="AI Infrastructure, Full-Stack Development, Robotics — YuJin Hong's technical portfolio showcasing real-world projects.">
+  <meta name="description" content="Full-Stack Development, Chatbot Services, Robotics — YuJin Hong's technical portfolio showcasing real-world projects.">
   <meta property="og:title" content="YuJin Hong — Software Engineer Portfolio">
-  <meta property="og:description" content="AI Infrastructure, Full-Stack Development, Robotics">
+  <meta property="og:description" content="Full-Stack Development, Chatbot Services, Robotics">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0a0f">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -56,7 +56,7 @@
         <span class="hero-cursor">|</span>
       </div>
       <p class="hero-desc">
-        AI 에이전트 인프라부터 로보틱스 제어 시스템까지,<br>
+        풀스택 웹 서비스부터 로보틱스 제어 시스템까지,<br>
         실제 문제를 해결하는 소프트웨어를 만듭니다.
       </p>
       <div class="hero-actions">
@@ -85,12 +85,12 @@
       <div class="about-grid fade-in">
         <div class="about-text">
           <p>
-            소프트웨어 엔지니어로서 <strong>AI 인프라</strong>, <strong>풀스택 웹 개발</strong>,
+            소프트웨어 엔지니어로서 <strong>풀스택 웹 개발</strong>, <strong>챗봇/API 서비스</strong>,
             <strong>로보틱스</strong> 분야에서 실제 문제를 해결하는 프로젝트를 만들어왔습니다.
           </p>
           <p>
-            AI 에이전트가 반복적으로 실패하는 문제를 해결하기 위한 지식 인프라(<a href="https://deadends.dev" target="_blank" rel="noopener">deadends.dev</a>)를 구축하고,
-            오픈소스 기여를 시각화하는 도구를 개발하며,
+            카카오톡 기반 가상 주식 투자 게임을 개발하고,
+            오픈소스 기여를 시각화하는 도구를 만들며,
             한국 기술 커뮤니티를 위한 블로그 백업 서비스를 운영하고 있습니다.
           </p>
           <p>
@@ -108,7 +108,7 @@
             <span class="stat-label">Tech Domains</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">3</span>
+            <span class="stat-number">2</span>
             <span class="stat-label">Live Services</span>
           </div>
           <div class="stat-card">
@@ -127,68 +127,64 @@
         <span class="section-number">02.</span> Featured Projects
       </h2>
 
-      <!-- Project 1: deadends.dev -->
-      <article class="project-featured fade-in" data-repo="deadends.dev">
+      <!-- Project 1: stock-king-bot -->
+      <article class="project-featured fade-in" data-repo="stock-king-bot">
         <div class="project-featured-content">
           <div class="project-overline">
             <span class="project-badge project-badge-featured">Featured</span>
-            <span class="project-badge project-badge-live">Live</span>
+            <span class="project-badge project-badge-private">Private</span>
           </div>
-          <h3 class="project-title">deadends.dev</h3>
-          <p class="project-subtitle">Structured Failure Knowledge Infrastructure for AI Agents</p>
+          <h3 class="project-title">Stock King Bot</h3>
+          <p class="project-subtitle">KakaoTalk Virtual Stock Trading Game</p>
           <div class="project-description">
             <p>
-              AI 에이전트가 이미 실패한 해결책을 반복적으로 시도하는 문제를 해결합니다.
-              <strong>2,000개 이상의 에러 엔트리</strong>와 <strong>43개 소프트웨어 도메인</strong>을 커버하는
-              구조화된 실패 지식 데이터베이스를 제공합니다.
+              카카오톡에서 즐기는 가상 주식 투자 게임입니다.
+              <strong>한국투자증권 KIS API</strong>를 연동하여 실시간 시세를 기반으로
+              가상 자금으로 투자하며, <strong>미니게임</strong>과 <strong>PvP 배틀</strong> 기능을 제공합니다.
             </p>
             <div class="project-highlights">
               <div class="highlight-item">
-                <span class="highlight-value">2,000+</span>
-                <span class="highlight-label">Error Entries</span>
+                <span class="highlight-value">20+</span>
+                <span class="highlight-label">Commands</span>
               </div>
               <div class="highlight-item">
-                <span class="highlight-value">43</span>
-                <span class="highlight-label">Tech Domains</span>
+                <span class="highlight-value">KIS API</span>
+                <span class="highlight-label">Real-time Data</span>
               </div>
               <div class="highlight-item">
-                <span class="highlight-value">8</span>
-                <span class="highlight-label">MCP Tools</span>
+                <span class="highlight-value">5</span>
+                <span class="highlight-label">Mini-Games</span>
               </div>
               <div class="highlight-item">
-                <span class="highlight-value">18+</span>
-                <span class="highlight-label">Output Formats</span>
+                <span class="highlight-value">PvP</span>
+                <span class="highlight-label">Battle System</span>
               </div>
             </div>
             <div class="project-features">
-              <h4>Key Architecture</h4>
+              <h4>Key Features</h4>
               <ul>
-                <li>MCP Server with 8 specialized tools for intelligent error querying</li>
-                <li>REST API, Python SDK, CLI — multiple integration interfaces</li>
-                <li>ErrorCanon JSON structure: error signatures, verdicts, dead ends, workarounds</li>
-                <li>Error transition graphs connecting related failure patterns</li>
-                <li>Coverage: Python, Docker, ROS2, CUDA, Kubernetes, Go, Java, AWS 등 43개 도메인</li>
+                <li>KIS API 연동 실시간 한국 주식 시세 조회 (급등/급락/거래량 TOP)</li>
+                <li>가상 5,000만원 시작 자금 기반 매수/매도 시뮬레이션</li>
+                <li>미니게임: 복권, 슬롯머신, 동전던지기, 룰렛, 하이로우</li>
+                <li>PvP 주가 예측 배틀 및 수익률 기반 랭킹 시스템</li>
+                <li>한글 단축키 지원 (/ㅅㅅ, /ㅁㅅ, /ㅈㄱ 등 20+개 명령어)</li>
               </ul>
             </div>
           </div>
           <div class="project-tech">
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">MCP Protocol</span>
-            <span class="tech-tag">REST API</span>
-            <span class="tech-tag">JSON-LD</span>
-            <span class="tech-tag">OpenAPI</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">KIS API</span>
+            <span class="tech-tag">KakaoTalk Bot</span>
             <span class="tech-tag">Docker</span>
-            <span class="tech-tag">PyPI</span>
+            <span class="tech-tag">Render</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/dbwls99706/deadends.dev" target="_blank" rel="noopener noreferrer" class="project-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              Source
-            </a>
-            <a href="https://deadends.dev" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Live Site
-            </a>
+            <span class="project-link project-link-private">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Private Repository
+            </span>
           </div>
         </div>
         <div class="project-featured-visual">
@@ -197,23 +193,27 @@
               <span class="code-dot code-dot-red"></span>
               <span class="code-dot code-dot-yellow"></span>
               <span class="code-dot code-dot-green"></span>
-              <span class="code-window-title">deadends query</span>
+              <span class="code-window-title">KakaoTalk Chat</span>
             </div>
-            <pre class="code-window-body"><code><span class="code-comment"># MCP Tool: search errors</span>
-<span class="code-keyword">from</span> deadends <span class="code-keyword">import</span> Client
+            <pre class="code-window-body"><code><span class="code-comment"># Stock King Bot Commands</span>
 
-client = Client()
-results = client.search(
-    <span class="code-string">"CUDA out of memory"</span>,
-    domain=<span class="code-string">"cuda"</span>
-)
+<span class="code-keyword">/시세</span> 삼성전자
+<span class="code-string">  Samsung Electronics (005930)</span>
+<span class="code-string">  현재가: 72,400원 (+2.1%)</span>
+<span class="code-string">  거래량: 12,345,678주</span>
 
-<span class="code-keyword">for</span> entry <span class="code-keyword">in</span> results:
-    <span class="code-builtin">print</span>(entry.dead_ends)
-    <span class="code-comment"># ["Increasing swap space"]</span>
-    <span class="code-builtin">print</span>(entry.workarounds)
-    <span class="code-comment"># ["Use gradient checkpointing",</span>
-    <span class="code-comment">#  "Reduce batch size by half"]</span></code></pre>
+<span class="code-keyword">/매수</span> 삼성전자 10
+<span class="code-string">  10주 매수 완료!</span>
+<span class="code-string">  총 724,000원 | 잔고: 49,276,000원</span>
+
+<span class="code-keyword">/포트폴리오</span>
+<span class="code-string">  총 자산: 51,240,000원</span>
+<span class="code-string">  수익률: +2.48%</span>
+
+<span class="code-keyword">/랭킹</span>
+<span class="code-string">  1. Player_A  +15.2%</span>
+<span class="code-string">  2. Player_B  +8.7%</span>
+<span class="code-string">  3. You       +2.5%</span></code></pre>
           </div>
         </div>
       </article>
@@ -480,10 +480,9 @@ results = client.search(
             AI / ML
           </h3>
           <div class="skill-items">
-            <div class="skill-item">LLM Agents</div>
-            <div class="skill-item">MCP Protocol</div>
             <div class="skill-item">YOLOv8</div>
-            <div class="skill-item">Error Knowledge Systems</div>
+            <div class="skill-item">Chatbot Development</div>
+            <div class="skill-item">KIS Stock API</div>
           </div>
         </div>
         <div class="skill-category">
