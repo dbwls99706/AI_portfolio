@@ -741,26 +741,17 @@ strong {
 /* --- Project Screenshots Gallery --- */
 .project-screenshots {
   display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+  gap: 8px;
   padding: 4px 0;
-  scrollbar-width: none;
-}
-
-.project-screenshots::-webkit-scrollbar {
-  display: none;
 }
 
 .project-screenshots img {
-  flex-shrink: 0;
-  height: 420px;
-  width: auto;
+  flex: 1 1 0;
+  min-width: 0;
+  height: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  scroll-snap-align: start;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* --- Project Video Embed --- */
@@ -784,11 +775,9 @@ strong {
 }
 
 .project-video-shorts {
-  padding-bottom: 0;
-  height: auto;
-  aspect-ratio: 9 / 16;
-  max-height: 480px;
-  width: auto;
+  padding-bottom: 177.78%;
+  height: 0;
+  max-width: 360px;
   margin: 0 auto;
 }
 
@@ -1098,8 +1087,8 @@ strong {
     padding: 16px;
   }
 
-  .project-screenshots img {
-    height: 340px;
+  .project-screenshots {
+    gap: 6px;
   }
 }
 
