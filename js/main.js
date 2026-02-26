@@ -8,7 +8,7 @@
   // --- Typing Animation ---
   const roles = [
     'Full-Stack Developer',
-    'Chatbot Service Developer',
+    'AI Application Developer',
     'Robotics Software Engineer',
     'Open-Source Contributor',
   ];

@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YuJin Hong — Software Engineer Portfolio</title>
-  <meta name="description" content="Full-Stack Development, Chatbot Services, Robotics — YuJin Hong's technical portfolio showcasing real-world projects.">
+  <meta name="description" content="Full-Stack Development, AI Applications, Robotics — YuJin Hong's technical portfolio showcasing real-world projects.">
   <meta property="og:title" content="YuJin Hong — Software Engineer Portfolio">
-  <meta property="og:description" content="Full-Stack Development, Chatbot Services, Robotics">
+  <meta property="og:description" content="Full-Stack Development, AI Applications, Robotics">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0a0f">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -85,11 +85,11 @@
       <div class="about-grid fade-in">
         <div class="about-text">
           <p>
-            소프트웨어 엔지니어로서 <strong>풀스택 웹 개발</strong>, <strong>챗봇/API 서비스</strong>,
+            소프트웨어 엔지니어로서 <strong>AI 애플리케이션</strong>, <strong>풀스택 웹 개발</strong>,
             <strong>로보틱스</strong> 분야에서 실제 문제를 해결하는 프로젝트를 만들어왔습니다.
           </p>
           <p>
-            카카오톡 기반 가상 주식 투자 게임을 개발하고,
+            카카오톡 기반 가상 주식 투자 게임, OpenAI GPT-4o 기반 자동 일기 앱을 개발하고,
             오픈소스 기여를 시각화하는 도구를 만들며,
             한국 기술 커뮤니티를 위한 블로그 백업 서비스를 운영하고 있습니다.
           </p>
@@ -218,7 +218,95 @@
         </div>
       </article>
 
-      <!-- Project 2: OpenSource-contribution-card -->
+      <!-- Project 2: OnePageToday -->
+      <article class="project-featured fade-in" data-repo="OnePageToday">
+        <div class="project-featured-content">
+          <div class="project-overline">
+            <span class="project-badge project-badge-featured">Featured</span>
+            <span class="project-badge project-badge-private">Private</span>
+          </div>
+          <h3 class="project-title">One Page Today</h3>
+          <p class="project-subtitle">AI Auto-Generated Daily Diary from Smartphone Data</p>
+          <div class="project-description">
+            <p>
+              스마트폰 사용 흔적으로 자동 생성되는 하루 한 페이지 일기 앱입니다.
+              <strong>OpenAI GPT-4o</strong>와 <strong>Vision API</strong>로 사진과 위치 데이터를 분석하여
+              사용자 입력 없이 일기를 자동 작성합니다.
+              <em>조코딩 x OpenAI x Primer AI 해커톤 2026</em> 출품작.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-value">GPT-4o</span>
+                <span class="highlight-label">AI Generation</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">Vision</span>
+                <span class="highlight-label">Photo Analysis</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">7+</span>
+                <span class="highlight-label">Data Sources</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">Auto</span>
+                <span class="highlight-label">No User Input</span>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li>GPS 클러스터링 + 카카오 로컬 API로 체류 장소 및 매장명 자동 감지</li>
+                <li>OpenAI Vision API로 사진 속 장면을 분석하여 일기에 반영</li>
+                <li>위치, 사진, 걸음수, 날씨, 캘린더, 앱 사용 패턴 7가지 데이터 자동 수집</li>
+                <li>Firebase Auth + Firestore 클라우드 동기화, API 키 암호화</li>
+                <li>사진 x 장소 교차 매칭 알고리즘으로 컨텍스트 기반 서술 생성</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Expo</span>
+            <span class="tech-tag">OpenAI GPT-4o</span>
+            <span class="tech-tag">Vision API</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">Kakao API</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link project-link-private">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Private Repository
+            </span>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="code-dot code-dot-red"></span>
+              <span class="code-dot code-dot-yellow"></span>
+              <span class="code-dot code-dot-green"></span>
+              <span class="code-window-title">diary_output.txt</span>
+            </div>
+            <pre class="code-window-body"><code><span class="code-comment"># AI-Generated Diary (GPT-4o)</span>
+
+<span class="code-string">맑았지만 바람이 차가운 아침이었다.</span>
+<span class="code-string">이불 속에서 폰을 만지다 늦게 일어났다.</span>
+
+<span class="code-string">점심에 홍대입구 부근의 이자카야에서</span>
+<span class="code-string">돈가스를 먹었다.</span>
+<span class="code-comment">  # GPS: 37.5563, 126.9234</span>
+<span class="code-comment">  # Vision: food plate detected</span>
+<span class="code-comment">  # Kakao: "홍대 이자카야 OO"</span>
+
+<span class="code-string">오후에 스타벅스 연남점에 들어가</span>
+<span class="code-string">아메리카노를 시키고 작업을 이어갔다.</span>
+<span class="code-comment">  # Stay: 2h 30m detected</span>
+<span class="code-comment">  # Steps: 4,827</span></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: OpenSource-contribution-card -->
       <article class="project-featured fade-in" data-repo="OpenSource-contribution-card">
         <div class="project-featured-content">
           <div class="project-overline">
@@ -480,9 +568,9 @@
             AI / ML
           </h3>
           <div class="skill-items">
+            <div class="skill-item">OpenAI GPT-4o / Vision API</div>
             <div class="skill-item">YOLOv8</div>
             <div class="skill-item">Chatbot Development</div>
-            <div class="skill-item">KIS Stock API</div>
           </div>
         </div>
         <div class="skill-category">
@@ -491,11 +579,10 @@
             Web Development
           </h3>
           <div class="skill-items">
-            <div class="skill-item">React</div>
+            <div class="skill-item">React / React Native</div>
             <div class="skill-item">Next.js</div>
             <div class="skill-item">FastAPI</div>
-            <div class="skill-item">Tailwind CSS</div>
-            <div class="skill-item">Vite</div>
+            <div class="skill-item">Expo</div>
           </div>
         </div>
         <div class="skill-category">
@@ -530,8 +617,9 @@
           </h3>
           <div class="skill-items">
             <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">Firebase / Firestore</div>
             <div class="skill-item">Supabase</div>
-            <div class="skill-item">LocalStorage</div>
+            <div class="skill-item">SQLite</div>
           </div>
         </div>
       </div>
