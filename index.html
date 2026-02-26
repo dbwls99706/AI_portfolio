@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YuJin Hong — Software Engineer Portfolio</title>
+  <meta name="description" content="AI Infrastructure, Full-Stack Development, Robotics — YuJin Hong's technical portfolio showcasing real-world projects.">
+  <meta property="og:title" content="YuJin Hong — Software Engineer Portfolio">
+  <meta property="og:description" content="AI Infrastructure, Full-Stack Development, Robotics">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-bracket">{</span> YJH <span class="nav-logo-bracket">}</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">YuJin Hong</h1>
+      <div class="hero-role">
+        <span class="hero-role-prefix">&gt;&nbsp;</span>
+        <span class="hero-role-text" id="heroRoleText"></span>
+        <span class="hero-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        AI 에이전트 인프라부터 로보틱스 제어 시스템까지,<br>
+        실제 문제를 해결하는 소프트웨어를 만듭니다.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Projects
+        </a>
+        <a href="https://github.com/dbwls99706" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>
+            소프트웨어 엔지니어로서 <strong>AI 인프라</strong>, <strong>풀스택 웹 개발</strong>,
+            <strong>로보틱스</strong> 분야에서 실제 문제를 해결하는 프로젝트를 만들어왔습니다.
+          </p>
+          <p>
+            AI 에이전트가 반복적으로 실패하는 문제를 해결하기 위한 지식 인프라(<a href="https://deadends.dev" target="_blank" rel="noopener">deadends.dev</a>)를 구축하고,
+            오픈소스 기여를 시각화하는 도구를 개발하며,
+            한국 기술 커뮤니티를 위한 블로그 백업 서비스를 운영하고 있습니다.
+          </p>
+          <p>
+            ROS2 기반 로봇 시스템과 MATLAB 제어 시뮬레이션까지,
+            소프트웨어와 하드웨어의 경계를 넘나드는 프로젝트를 수행합니다.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" id="statRepos">5+</span>
+            <span class="stat-label">Production Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Tech Domains</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Live Services</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="statStars">8+</span>
+            <span class="stat-label">GitHub Stars</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="section section-projects" id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number">02.</span> Featured Projects
+      </h2>
+
+      <!-- Project 1: deadends.dev -->
+      <article class="project-featured fade-in" data-repo="deadends.dev">
+        <div class="project-featured-content">
+          <div class="project-overline">
+            <span class="project-badge project-badge-featured">Featured</span>
+            <span class="project-badge project-badge-live">Live</span>
+          </div>
+          <h3 class="project-title">deadends.dev</h3>
+          <p class="project-subtitle">Structured Failure Knowledge Infrastructure for AI Agents</p>
+          <div class="project-description">
+            <p>
+              AI 에이전트가 이미 실패한 해결책을 반복적으로 시도하는 문제를 해결합니다.
+              <strong>2,000개 이상의 에러 엔트리</strong>와 <strong>43개 소프트웨어 도메인</strong>을 커버하는
+              구조화된 실패 지식 데이터베이스를 제공합니다.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-value">2,000+</span>
+                <span class="highlight-label">Error Entries</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">43</span>
+                <span class="highlight-label">Tech Domains</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">8</span>
+                <span class="highlight-label">MCP Tools</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">18+</span>
+                <span class="highlight-label">Output Formats</span>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>Key Architecture</h4>
+              <ul>
+                <li>MCP Server with 8 specialized tools for intelligent error querying</li>
+                <li>REST API, Python SDK, CLI — multiple integration interfaces</li>
+                <li>ErrorCanon JSON structure: error signatures, verdicts, dead ends, workarounds</li>
+                <li>Error transition graphs connecting related failure patterns</li>
+                <li>Coverage: Python, Docker, ROS2, CUDA, Kubernetes, Go, Java, AWS 등 43개 도메인</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MCP Protocol</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">JSON-LD</span>
+            <span class="tech-tag">OpenAPI</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">PyPI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dbwls99706/deadends.dev" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Source
+            </a>
+            <a href="https://deadends.dev" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Site
+            </a>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="code-dot code-dot-red"></span>
+              <span class="code-dot code-dot-yellow"></span>
+              <span class="code-dot code-dot-green"></span>
+              <span class="code-window-title">deadends query</span>
+            </div>
+            <pre class="code-window-body"><code><span class="code-comment"># MCP Tool: search errors</span>
+<span class="code-keyword">from</span> deadends <span class="code-keyword">import</span> Client
+
+client = Client()
+results = client.search(
+    <span class="code-string">"CUDA out of memory"</span>,
+    domain=<span class="code-string">"cuda"</span>
+)
+
+<span class="code-keyword">for</span> entry <span class="code-keyword">in</span> results:
+    <span class="code-builtin">print</span>(entry.dead_ends)
+    <span class="code-comment"># ["Increasing swap space"]</span>
+    <span class="code-builtin">print</span>(entry.workarounds)
+    <span class="code-comment"># ["Use gradient checkpointing",</span>
+    <span class="code-comment">#  "Reduce batch size by half"]</span></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: OpenSource-contribution-card -->
+      <article class="project-featured fade-in" data-repo="OpenSource-contribution-card">
+        <div class="project-featured-content">
+          <div class="project-overline">
+            <span class="project-badge project-badge-featured">Featured</span>
+            <span class="project-badge project-badge-stars" data-repo-stars="OpenSource-contribution-card">6 stars</span>
+          </div>
+          <h3 class="project-title">OpenSource-contribution-card</h3>
+          <p class="project-subtitle">Display Your Open-Source Contributions on GitHub Profile</p>
+          <div class="project-description">
+            <p>
+              GitHub 프로필 README에 외부 오픈소스 기여를 자동으로 보여주는 도구입니다.
+              Merged PR을 자동 수집하고, <strong>5가지 테마</strong>의 SVG 카드를 생성하며,
+              GitHub Actions로 매일 자동 업데이트됩니다.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-value" data-live-stars="OpenSource-contribution-card">6</span>
+                <span class="highlight-label">GitHub Stars</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">2</span>
+                <span class="highlight-label">Forks</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">5</span>
+                <span class="highlight-label">Themes</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">3x</span>
+                <span class="highlight-label">Daily Auto-Updates</span>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li>Merged PR 자동 수집 (외부 프로젝트 기여만 필터링)</li>
+                <li>5 themes: Light, Dark, Nord, Dracula, Tokyo</li>
+                <li>GitHub의 light/dark 모드 자동 감지 및 테마 전환</li>
+                <li>OSS Score = (Merged PRs x 10) + (Contributing Repos x 20)</li>
+                <li>Organization 필터링, 기간 설정, PR 라벨 자동 분류</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">GitHub Actions</span>
+            <span class="tech-tag">SVG Generation</span>
+            <span class="tech-tag">GitHub API</span>
+            <span class="tech-tag">CI/CD</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dbwls99706/OpenSource-contribution-card" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Source
+            </a>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="code-dot code-dot-red"></span>
+              <span class="code-dot code-dot-yellow"></span>
+              <span class="code-dot code-dot-green"></span>
+              <span class="code-window-title">README.md</span>
+            </div>
+            <pre class="code-window-body"><code><span class="code-comment">&lt;!-- Add to your GitHub profile --&gt;</span>
+
+<span class="code-keyword">&lt;picture&gt;</span>
+  <span class="code-keyword">&lt;source</span>
+    <span class="code-string">media="(prefers-color-scheme: dark)"</span>
+    <span class="code-string">srcset="oss-card-dark.svg"</span> <span class="code-keyword">/&gt;</span>
+  <span class="code-keyword">&lt;source</span>
+    <span class="code-string">media="(prefers-color-scheme: light)"</span>
+    <span class="code-string">srcset="oss-card-light.svg"</span> <span class="code-keyword">/&gt;</span>
+  <span class="code-keyword">&lt;img</span>
+    <span class="code-string">src="oss-card-light.svg"</span>
+    <span class="code-string">alt="OSS Contributions"</span> <span class="code-keyword">/&gt;</span>
+<span class="code-keyword">&lt;/picture&gt;</span>
+
+<span class="code-comment">&lt;!-- Auto-updated 3x daily --&gt;</span></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Velog_Backup -->
+      <article class="project-featured fade-in" data-repo="Velog_Backup">
+        <div class="project-featured-content">
+          <div class="project-overline">
+            <span class="project-badge project-badge-featured">Featured</span>
+            <span class="project-badge project-badge-live">Live</span>
+          </div>
+          <h3 class="project-title">Velog Backup</h3>
+          <p class="project-subtitle">Velog 블로그 백업 서비스 — 글이 지워지기 전에</p>
+          <div class="project-description">
+            <p>
+              한국의 기술 블로그 플랫폼 Velog의 글과 이미지를 안전하게 백업하는 풀스택 웹 서비스입니다.
+              <strong>GitHub OAuth</strong> 로그인, <strong>이메일 알림</strong>,
+              <strong>ZIP 다운로드</strong> 기능을 제공합니다.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-value">Full-Stack</span>
+                <span class="highlight-label">Architecture</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">Next.js</span>
+                <span class="highlight-label">Frontend</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">FastAPI</span>
+                <span class="highlight-label">Backend</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-value">Supabase</span>
+                <span class="highlight-label">Database</span>
+              </div>
+            </div>
+            <div class="project-features">
+              <h4>System Architecture</h4>
+              <ul>
+                <li>Frontend: Next.js 14 (Vercel 배포) — SSR 기반 대시보드</li>
+                <li>Backend: FastAPI (Railway 배포) — 비동기 백업 처리</li>
+                <li>Database: PostgreSQL (Supabase) — 메타데이터 및 사용자 관리</li>
+                <li>GitHub OAuth 인증, 이메일 알림, 이미지 포함 ZIP 다운로드</li>
+                <li>Privacy-first: 사용자별 독립된 백업 데이터 격리</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Next.js 14</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Vercel</span>
+            <span class="tech-tag">Railway</span>
+            <span class="tech-tag">GitHub OAuth</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dbwls99706/Velog_Backup" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              Source
+            </a>
+            <a href="https://velog-backup.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Site
+            </a>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="code-dot code-dot-red"></span>
+              <span class="code-dot code-dot-yellow"></span>
+              <span class="code-dot code-dot-green"></span>
+              <span class="code-window-title">architecture.yaml</span>
+            </div>
+            <pre class="code-window-body"><code><span class="code-keyword">services:</span>
+  <span class="code-string">frontend:</span>
+    <span class="code-keyword">framework:</span> Next.js 14
+    <span class="code-keyword">deploy:</span> Vercel
+    <span class="code-keyword">features:</span>
+      - SSR Dashboard
+      - GitHub OAuth Login
+      - Responsive UI
+
+  <span class="code-string">backend:</span>
+    <span class="code-keyword">framework:</span> FastAPI
+    <span class="code-keyword">deploy:</span> Railway
+    <span class="code-keyword">features:</span>
+      - Async Backup Engine
+      - Email Notifications
+      - ZIP Packaging
+
+  <span class="code-string">database:</span>
+    <span class="code-keyword">type:</span> PostgreSQL
+    <span class="code-keyword">provider:</span> Supabase</code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Other Projects -->
+      <h3 class="section-subtitle fade-in">Other Projects</h3>
+      <div class="projects-grid fade-in">
+
+        <!-- yolov8_on_raspberrypi4 -->
+        <article class="project-card" data-repo="yolov8_on_raspberrypi4">
+          <div class="project-card-header">
+            <svg class="project-card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+            <div class="project-card-links">
+              <a href="https://github.com/dbwls99706/yolov8_on_raspberrypi4" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="project-card-title">YOLOv8 on Raspberry Pi 4</h4>
+          <p class="project-card-desc">
+            ROS2 기반 Raspberry Pi 4B에서 YOLOv8 실시간 객체 탐지 패키지.
+            로봇 기반 전동 휠체어 시스템의 장애물 감지에 활용.
+          </p>
+          <div class="project-card-tech">
+            <span>Python</span>
+            <span>ROS2</span>
+            <span>YOLOv8</span>
+            <span>Raspberry Pi</span>
+            <span>Edge AI</span>
+          </div>
+        </article>
+
+        <!-- Robotics_Control -->
+        <article class="project-card" data-repo="Robotics_Control">
+          <div class="project-card-header">
+            <svg class="project-card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <div class="project-card-links">
+              <a href="https://github.com/dbwls99706/Robotics_Control" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="project-card-title">Robotics Control</h4>
+          <p class="project-card-desc">
+            MATLAB 기반 로보틱스 제어 프로젝트 5종. Lagrangian 동역학, Kalman 필터,
+            PID 제어, 궤적 추적을 1-DOF부터 3-DOF까지 구현.
+          </p>
+          <div class="project-card-tech">
+            <span>MATLAB</span>
+            <span>Lagrangian</span>
+            <span>Kalman Filter</span>
+            <span>PID Control</span>
+            <span>Trajectory</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number">03.</span> Tech Stack
+      </h2>
+      <div class="skills-grid fade-in">
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Languages
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot" style="background:#3572A5"></span>Python</div>
+            <div class="skill-item"><span class="skill-dot" style="background:#3178C6"></span>TypeScript</div>
+            <div class="skill-item"><span class="skill-dot" style="background:#F7DF1E"></span>JavaScript</div>
+            <div class="skill-item"><span class="skill-dot" style="background:#e16737"></span>MATLAB</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6H14c0-3 2-4 2-6a4 4 0 0 0-4-4z"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
+            AI / ML
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">LLM Agents</div>
+            <div class="skill-item">MCP Protocol</div>
+            <div class="skill-item">YOLOv8</div>
+            <div class="skill-item">Error Knowledge Systems</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Web Development
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">React</div>
+            <div class="skill-item">Next.js</div>
+            <div class="skill-item">FastAPI</div>
+            <div class="skill-item">Tailwind CSS</div>
+            <div class="skill-item">Vite</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            Robotics
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">ROS2</div>
+            <div class="skill-item">Raspberry Pi</div>
+            <div class="skill-item">Control Systems</div>
+            <div class="skill-item">Kalman Filters</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            DevOps / Infra
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">GitHub Actions</div>
+            <div class="skill-item">Vercel</div>
+            <div class="skill-item">Railway</div>
+            <div class="skill-item">Netlify</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            Database
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">Supabase</div>
+            <div class="skill-item">LocalStorage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number">04.</span> Contact
+      </h2>
+      <div class="contact-content fade-in">
+        <p class="contact-text">
+          새로운 기회나 협업에 관심이 있습니다.<br>
+          아래 링크를 통해 연락해주세요.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/dbwls99706" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>github.com/dbwls99706</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Built with vanilla HTML, CSS &amp; JavaScript.
+        <span class="footer-separator">|</span>
+        <a href="https://github.com/dbwls99706/AI_portfolio" target="_blank" rel="noopener noreferrer">View Source</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
