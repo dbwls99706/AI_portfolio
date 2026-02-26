@@ -738,6 +738,62 @@ strong {
 .code-string { color: #98c379; }
 .code-builtin { color: #61afef; }
 
+/* --- Project Screenshots Gallery --- */
+.project-screenshots {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 0;
+  scrollbar-width: none;
+}
+
+.project-screenshots::-webkit-scrollbar {
+  display: none;
+}
+
+.project-screenshots img {
+  flex-shrink: 0;
+  height: 420px;
+  width: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* --- Project Video Embed --- */
+.project-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.project-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+}
+
+.project-link-video {
+  color: #ff4444;
+  border-color: rgba(255, 68, 68, 0.3);
+}
+
+.project-link-video:hover {
+  color: #ff4444;
+  border-color: #ff4444;
+  background: rgba(255, 68, 68, 0.05);
+}
+
 /* --- Project Cards (Tier 2) --- */
 .projects-grid {
   display: grid;
@@ -1024,6 +1080,10 @@ strong {
   .code-window-body {
     font-size: 0.7rem;
     padding: 16px;
+  }
+
+  .project-screenshots img {
+    height: 340px;
   }
 }
 
