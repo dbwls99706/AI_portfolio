@@ -133,6 +133,7 @@
   // --- GitHub API: Fetch Live Star Counts ---
   var GITHUB_USERNAME = 'dbwls99706';
   var REPOS_TO_TRACK = [
+    'max-level-ant',
     'OpenSource-contribution-card',
     'Velog_Backup',
     'yolov8_on_raspberrypi4',
